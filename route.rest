@@ -1,0 +1,25 @@
+GET http://localhost:3000/subscribers
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "Manju",
+    "subscriberweb": "Dev"
+}
+
+###
+GET http://localhost:3000/subscribers/5eb029167905f73b5c0c341d
+
+###
+PATCH http://localhost:3000/subscribers/5eb029167905f73b5c0c341d
+Content-Type: application/json
+
+{
+    "name": "Mohan",
+    "subscriberweb": "CRUD"
+}
+
+###
+DELETE http://localhost:3000/subscribers/5eb029167905f73b5c0c341d
